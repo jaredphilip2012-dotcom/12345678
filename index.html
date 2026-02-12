@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quorzyx.com | Community Investing Tips</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-shape ambient-shape-one" aria-hidden="true"></div>
+  <div class="ambient-shape ambient-shape-two" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="eyebrow">Community-Led Investing Knowledge</p>
+    <h1>Quorzyx.com</h1>
+    <p class="subhead">A public feed where investors share real lessons from their own wins, losses, and long-term strategy.</p>
+    <p class="legal-alert"><strong>Important:</strong> All content is user opinion only. Do not treat any post as financial advice. You alone are responsible for investment decisions and outcomes.</p>
+    <p>
+      <a class="hero-link" href="legal-disclaimer.html">Read Legal Disclaimer</a>
+      |
+      <a class="hero-link" href="guidelines.html">Read Community Guidelines</a>
+    </p>
+  </header>
+
+  <main class="layout">
+    <section class="panel form-panel" aria-labelledby="share-title">
+      <h2 id="share-title">Share Your Investing Tip</h2>
+      <form id="tip-form" novalidate>
+        <label>
+          Your Name
+          <input type="text" name="author" required maxlength="40" placeholder="Jordan" />
+        </label>
+
+        <label>
+          Tip Title
+          <input type="text" name="title" required maxlength="80" placeholder="How I Reduced Panic Selling" />
+        </label>
+
+        <label>
+          Market Focus
+          <select name="focus" required>
+            <option value="">Select one</option>
+            <option value="Stocks">Stocks</option>
+            <option value="ETFs">ETFs</option>
+            <option value="Crypto">Crypto</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Bonds">Bonds</option>
+            <option value="General">General</option>
+          </select>
+        </label>
+
+        <label>
+          Experience Level
+          <select name="experience" required>
+            <option value="">Select one</option>
+            <option value="0-1 years">0-1 years</option>
+            <option value="2-4 years">2-4 years</option>
+            <option value="5-9 years">5-9 years</option>
+            <option value="10+ years">10+ years</option>
+          </select>
+        </label>
+
+        <label>
+          Your Tip
+          <textarea name="tip" required maxlength="600" placeholder="Describe what worked for you, what didn’t, and why."></textarea>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="accept" required />
+          <span>I confirm this post is personal opinion only and I understand users and the website creator are not liable for losses from reliance on posts.</span>
+        </label>
+
+        <p class="disclaimer-inline">By posting and using this website, you agree to the <a href="legal-disclaimer.html">Legal Disclaimer</a>, including liability limits and indemnification terms.</p>
+
+        <button type="submit">Post Tip</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="panel feed-panel" aria-labelledby="feed-title">
+      <div class="feed-header">
+        <h2 id="feed-title">Community Tips</h2>
+        <button id="clear-tips" class="muted-btn" type="button">Clear My Local Feed</button>
+      </div>
+      <p class="feed-note">Tips are user-generated and stored in your browser for demo purposes.</p>
+      <div id="tip-feed" class="tip-feed"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Quorzyx.com is a community discussion platform, not an investment advisory service.</p>
+    <p><a href="legal-disclaimer.html">Legal Disclaimer</a> | <a href="guidelines.html">Community Guidelines</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
