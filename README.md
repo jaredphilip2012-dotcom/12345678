@@ -1,0 +1,1 @@
+This is a cool website where users may post any useful tips for investing. This website is not legal advice. Please read the terms and conditions before use. Please respect and follow community guidlines. Thank you for supporting this website.
