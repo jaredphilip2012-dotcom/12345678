@@ -13,6 +13,9 @@ Note: This version stores posts in each visitor's browser (`localStorage`). It d
 
 ## 2) Deploy publicly (GitHub Pages)
 
+Free option: use GitHub Pages URL first (`https://<YOUR_USERNAME>.github.io/<YOUR_REPO>/`).  
+Do not add a `CNAME` file unless you own and want a paid custom domain.
+
 ### Create GitHub repo and push
 
 Run these commands from terminal:
